@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.rule-lg {
+    border: none;
+    border-bottom: 2px solid #242929;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* NAVBAR SECTION  */
+#header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+#header .header{
+    min-height: 5vh;
+    background-color: plum ;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%; 
+    
+}
+#header .navlist {
+    margin-right: 200px;
+}
+
+#header .navlist ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+} 
+#header .navlist ul a{
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    letter-spacing: .20px;
+}
+
+#header .navlist ul a:hover{
+    color: plum;
+    background-color: white;
+}
+
+#header .brand img{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+/* NAVBAR SECTION ENDS  */
+
+/* HOME SECTION*/
+#hero{
+    background-image: url(./image/homeBG1.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+}
+
+#hero .ctd{
+    padding: 10px 30px;
+    display: inline-block;
+    color: plum;
+    background-color: transparent;
+    border: 2px solid plum;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#hero .ctd:hover{
+    color: white;
+    background-color: plum;
+}
+/* HOME SECTION ENDS */
+
+
+/* SERVICE SECTION */
+#services .service{
+    flex-direction: column;
+    text-align: center;
+}
+#services .section-title{
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    margin: 20px;
+}
+
+
+#services .service-top p{
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+
+#services .service-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .service-item{
+    font-size: 1.4rem;
+    text-align: center;
+    flex-basis: 80%;
+    background-image: url(image/serviceBG1.webp);
+    background-size: cover;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 18px 0px #635f5f2c;
+}
+
+#services .service-item h2{
+    font-size: 3rem;
+    padding: 10px;
+}
+/* SERVICE SECTION ENDS */
+
+/* CAROUSEL SECTION  */
+.h-80{
+    height: 800px !important;
+}
+
+.carousel-caption h5{
+    font-size: 4rem;
+    color: white;
+}
+
+.carousel-caption p{
+    font-size: 1.5rem;
+    color: white;
+}
+/* CAROUSEL SECTION ENDS */
+
+/* ABOUT SECTION */
+#about .section-title {
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    margin: 20px;
+}
+#about p{
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#about .ctd{
+    padding: 10px 30px;
+    display: inline-block;
+    color: plum;
+    background-color: transparent;
+    border: 2px solid plum;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#about .ctd:hover{
+    color: white;
+    background-color: plum;
+}
+
+#about .mail{
+    margin: 20px auto;
+    width: fit-content;
+}
+
+#about .about-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .about-item{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+#about .about-item:hover{
+    transform: scale(1.2);
+}
+/* ABOUT SECTION ENDS */
+
+
